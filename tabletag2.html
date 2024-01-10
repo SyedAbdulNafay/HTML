@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>Colspan</title>
+
+    <body>
+        <h1 align="center">Colspan</h1>
+        
+        <table border="1" align="center" width="50%" cellpadding="10px" cellspacing="0px">
+            <tr>
+                <td height="100px">A</td>
+                <td>B</td> <!-- even if we remove this column, the B column will not merge with A, for that we need colspan -->
+            </tr>
+
+            <tr>
+                <td height="100px">C (see), when we removed the D column and added content in the C column, its content remains within the bounds of the C column and that column is still seperate</td>
+                
+            </tr>
+
+            <tr>
+                <td height="100px"  colspan="2">E now that we have colspan'd these two columns, whatever we write in this will be added into the merged column created</td>
+                
+            </tr>
+        </table>
+
+        <h1 align="center">Rowspan</h1>
+        
+        <table border="1" align="center" width="50%" cellpadding="10px" cellspacing="0px">
+            <!-- there is also a caption feature that lets you add a small cute little caption at the top of the table -->
+            
+            <caption>Student Enrollment</caption>
+            <tr>
+                <td height="100px">A</td>
+                <td>B</td>
+            </tr>
+
+            <tr>
+                <td height="100px" rowspan="2">C</td>
+                <td>D</td>
+            </tr>
+            <!-- we merge the E row with the C row by removing the E row and then rowspanning C-->
+            <tr>
+                
+                <td>F</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
