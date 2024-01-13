@@ -6,74 +6,78 @@
 
     <body>
         <form action="" method="post">
-            <label>Name</label> <input type="text" name="fname" value="" placeholder="Enter your name here"> <br><br>
-            
-            <label>Email</label> <input type="text" name="email" value="" placeholder="Enter your email here"> <br><br>
-            
-            <label>Password</label> <input type="password" name="" placeholder="Enter your password here"> <br><br>
-            
-            <label>Gender</label> <input type="radio" name="gender" id="male"> <label for="male">Male</label> <input type="radio" name="gender" id="female"> <label for="female">Female</label> <!--if both the inputs have the same name, then they both cannot be selected--> <br><br>
-        
-            <label>Hobbies</label> <input type="checkbox" name="hobby" id="music"> <label for="music">Music</label> <input type="checkbox" name="hobby" id="football"> <label for="football">Football</label> <input type="checkbox" name="hobby" id="coding"> <label for="coding">Coding</label> <br><br>
-        
-            <label>Message</label> <textarea rows="10" cols="28" placeholder="Enter your message here, if any"></textarea> <br><br>
+            <fieldset>
+                <legend>Personal Information</legend>
 
-            <label>Country</label> <select name="" size="1" multiple> <!--size-number of option to show, multiple-able to choose more than one option-->
-                <option value="pk">Pakistan</option>
-                <option value="in">India</option>
-                <option value="bn">Bangladesh</option>
-                <option selected value="cn">China</option> <!--whichever option you want to be already selected, you use the selected property-->
-            </select>
-
-            <br/><br/>
-
-            <label>City</label> <select>
-                <optgroup label="Sindh">
-                    <option>Karachi</option>
-                    <option>Hyderabad</option>
-                    <option>Thatta</option>
-                </optgroup>
-
-                <optgroup label="Punjab">
-                    <option>Islamabad</option>
-                    <option>Lahore</option>
-                    <option>Multan</option>
-                </optgroup>
+                <label>Name</label> <input type="text" name="fname" value="" placeholder="Enter your name here"> <br><br>
                 
-                <optgroup label="Balochistan">
-                    <option>Quetta</option>
-                    <option>Khuzdar</option>
-                    <option>Gwadar</option>
-                </optgroup>
+                <label>Email</label> <input type="text" name="email" value="" placeholder="Enter your email here"> <br><br>
                 
-                <optgroup label="KPK">
-                    <option>Peshawar</option>
-                    <option>Mardan</option>
-                    <option>Murree</option>
-                </optgroup> 
-            </select>
-            <br><br>
-            <label>City</label> <input list="city">
-                                    <datalist id="city">
-                                        <option>Karachi</option>
-                                        <option>Hyderabad</option>
-                                        <option>Thatta</option>
-                                        <option>Islamabad</option>
-                                        <option>Lahore</option>
-                                        <option>Multan</option>
-                                        <option>Quetta</option>
-                                        <option>Khuzdar</option>
-                                        <option>Gwadar</option>
-                                        <option>Peshawar</option>
-                                        <option>Mardan</option>
-                                        <option>Murree</option>
-                                    </datalist>
-                                    <br><br>
-            <label>Upload Picture Of Yourself</label> <input type="file" accept="image/*" name="" /> <!--accept-what type of file it will input only(* means any format of image, if you want a specific format then type that instead of *)-->
-            <br><br>
+                <label>Password</label> <input type="password" name="" placeholder="Enter your password here"> <br><br>
+                
+                <label>Gender</label> <input type="radio" name="gender" id="male"> <label for="male">Male</label> <input type="radio" name="gender" id="female"> <label for="female">Female</label> <!--if both the inputs have the same name, then they both cannot be selected--> <br><br>
             
-            <input type="submit" value="Save" />
-            <input type="reset" />
+                <label>Hobbies</label> <input type="checkbox" name="hobby" id="music"> <label for="music">Music</label> <input type="checkbox" name="hobby" id="football"> <label for="football">Football</label> <input type="checkbox" name="hobby" id="coding"> <label for="coding">Coding</label> <br><br>
+            
+                <label>Message</label> <textarea rows="10" cols="28" placeholder="Enter your message here, if any"></textarea> <br><br>
+
+                <label>Country</label> <select name="" size="1" multiple> <!--size-number of option to show, multiple-able to choose more than one option-->
+                    <option value="pk">Pakistan</option>
+                    <option value="in">India</option>
+                    <option value="bn">Bangladesh</option>
+                    <option selected value="cn">China</option> <!--whichever option you want to be already selected, you use the selected property-->
+                </select>
+
+                <br/><br/>
+
+                <label>City</label> <select>
+                    <optgroup label="Sindh">
+                        <option>Karachi</option>
+                        <option>Hyderabad</option>
+                        <option>Thatta</option>
+                    </optgroup>
+
+                    <optgroup label="Punjab">
+                        <option>Islamabad</option>
+                        <option>Lahore</option>
+                        <option>Multan</option>
+                    </optgroup>
+                    
+                    <optgroup label="Balochistan">
+                        <option>Quetta</option>
+                        <option>Khuzdar</option>
+                        <option>Gwadar</option>
+                    </optgroup>
+                    
+                    <optgroup label="KPK">
+                        <option>Peshawar</option>
+                        <option>Mardan</option>
+                        <option>Murree</option>
+                    </optgroup> 
+                </select>
+                <br><br>
+                <label>City</label> <input list="city">
+                                        <datalist id="city">
+                                            <option>Karachi</option>
+                                            <option>Hyderabad</option>
+                                            <option>Thatta</option>
+                                            <option>Islamabad</option>
+                                            <option>Lahore</option>
+                                            <option>Multan</option>
+                                            <option>Quetta</option>
+                                            <option>Khuzdar</option>
+                                            <option>Gwadar</option>
+                                            <option>Peshawar</option>
+                                            <option>Mardan</option>
+                                            <option>Murree</option>
+                                        </datalist>
+                                        <br><br>
+                <label>Upload Picture Of Yourself</label> <input type="file" accept="image/*" name="" /> <!--accept-what type of file it will input only(* means any format of image, if you want a specific format then type that instead of *)-->
+                <br><br>
+                
+                <input type="submit" value="Save" />
+                <input type="reset" />
+            </fieldset>
         </form>
     </body>
 </html> 
